@@ -97,11 +97,58 @@ Given one component and one champion, what is the next component you should go f
 Given x number of components, what champions and itemss should pick up to play strongest board
 Given other ppl's comp, what should you go, best matchups, correlated to the most successful comp I guess
 
-# Pre-processing Data
+# Data Cleaning
+
+<img width="717" alt="image" src="https://user-images.githubusercontent.com/71307669/178202992-3398ac3d-14da-477b-94be-8f535451321f.png">
+
 
 Working throught the dataset, I noticed that many of the champion columns for players where scarce, less than 7 champions on the board, max being 9(not including Force of Nature(+1 unit on board)). Because we want quality data, we will only be taking end-game comps, these are the following assumptions on end game comps:
 
-Player needs to be at least level 7
-Need at least 8 units on board (use FON to have 8 units but lv7)
-At least 4 full items on board
+- Player needs to be at least level 7
+- Need at least 8 units on board (use FON to have 8 units but lv7)
+- At least 4 full items on board
+
 Because to the time constraints, we are only going to explore fully developed compositions, this is okay due to the abundance of data in this dataset, we will be liberal in choosing only fully developed team compositions to explore.
+
+<img width="756" alt="image" src="https://user-images.githubusercontent.com/71307669/178202003-aac8e095-6fab-4c5a-92a9-b55d220e1079.png">
+
+This is the data after being cleaned, where the conditions mentioned above are met and the following adjustments were made to the remainding rows:
+
+- Combination column sorted in terms of number, then traits, this is done to quickly determine which comp they are playing
+- The items were converted from numbers to item names
+
+
+# Data Analysis
+
+There are many websites that aim to find out what the best comps to build are and what items you should have for these comps, my data analysis attempt to uncover some insight that will help people make more infored decisions when playing the game
+
+Meta Analysis (What is the most popular and most successful)
+- Most played, successful comp (Using Ranked to judge successfulness)
+- Most played, successful champ (Using Ranked to judge successfulness)
+- Most used, successful item (Using Ranked to judge successfulness, might not be too correlated)
+- Highest item-character correlation (Make a list of tuples, where each row is a character-item pair)
+- Most successful spat for comp character (all spat items have 8's, so must be tens and not 88 but 89)
+- Most common item pair, what 2 items go together the most (map items together)
+
+For all of these show the top and bottom 5, so we get a good idea of which comps and items to build and which to avoid. 
+
+Given the processing constraints of my laptop, I have decided to only use 10000 challanger games for this analysis. 
+
+### Most played, successful comp (Using Ranked to judge successfulness)
+
+<img width="313" alt="image" src="https://user-images.githubusercontent.com/71307669/178213738-2b064c1c-ee34-4a52-986e-e1afeaedf326.png">
+
+<img width="413" alt="image" src="https://user-images.githubusercontent.com/71307669/178213840-4cf51d21-bd1e-4e22-92ee-d712ed7ff60d.png">
+
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/71307669/178214028-3d18eec6-f3ab-436f-9579-83b43498f24c.png">
+
+
+
+### Most played, successful champions (Using Ranked to judge successfulness)
+
+<img width="176" alt="image" src="https://user-images.githubusercontent.com/71307669/178213320-1f75797c-0e7d-4b0f-a865-74629ecbd182.png">
+
+<img width="218" alt="image" src="https://user-images.githubusercontent.com/71307669/178213565-b75ea52a-2ee8-4ffa-aa2f-d705fb1e2524.png">
+
+<img width="239" alt="image" src="https://user-images.githubusercontent.com/71307669/178213639-219f9172-f764-4219-9273-727726eb4d88.png">
+
