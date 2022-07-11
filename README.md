@@ -152,3 +152,23 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 
 <img width="239" alt="image" src="https://user-images.githubusercontent.com/71307669/178213639-219f9172-f764-4219-9273-727726eb4d88.png">
 
+### Most played, successful items (Using Ranked to judge successfulness)
+
+<img width="159" alt="image" src="https://user-images.githubusercontent.com/71307669/178235814-660148d8-dbef-4529-940d-8ce647b13cd4.png">
+
+<img width="318" alt="image" src="https://user-images.githubusercontent.com/71307669/178235892-5f4d0420-49c7-4245-aeed-117d14c11d4c.png">
+
+### Most common champion-item pairing
+
+<img width="207" alt="image" src="https://user-images.githubusercontent.com/71307669/178236045-f8d61455-96ea-455a-90b8-8b69892f08a4.png">
+
+### Best performing Spatula Items
+
+<img width="325" alt="image" src="https://user-images.githubusercontent.com/71307669/178236307-2b7242d7-2c8a-4b49-a24a-f465e06e5ccb.png">
+
+### Most Common Builds for champion
+
+<img width="368" alt="image" src="https://user-images.githubusercontent.com/71307669/178236480-38f16731-fc18-432c-ad73-353352b6385a.png">
+
+
+
