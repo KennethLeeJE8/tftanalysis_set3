@@ -60,44 +60,11 @@ Stars : Enhance Champion n (Min 1 Star, Max 3 Star)
 
 ## Purpose(Business Goal):
 
-To know what the meta was at the time and what team compositions would yield the best results overall
-To know what to do in certain situations, given the champions you have or components you have what to build
-Best champions to hold that are in the most successful comps (Highest winrate)
-To know which items go on which champions and which champions go with an item, given already built or need to slam
-Plan for TFT Analysis:
+- To know what the meta was at the time and what team compositions would yield the best results overall
+- To know what to do in certain situations, given the champions you have or components you have what to build
+- Best champions to hold that are in the most successful comps (Highest winrate)
+- To know which items go on which champions and which champions go with an item, given already built or need to slam
 
-## Data Trends:
-
-A game is grouped into 8 rows, where each row is a player in the game, identify game by gameId
-combinations are displayed in alphabetical order, not the most helpful
-champions are also random order
-Items are indexed, consult the table
-## Data Prep:
-
-Group games to make it easier, can eliminate id after grouped, list of Dataframes
-Group game failed because of inconsistencies in data, only cherry picking rows that meet certain conditions
-Turn items id's into item names?
-Order the combinations in term of count, Highest Trait count is the comp, right now it is alphabetical
-turn json into dictionary
-## Data Vis:
-
-Most played, successful comp
-Most played, successful champ
-Most used, successful item
-Distribution of comp, array of traits, putting highest count at the front
-Highest item-character correlation
-Does in-game duration affect anything
-Trait and item combo
-Most successful spat for comp character
-Most common item pair, what 2 items go together the most
-## Pred:
-
-Given one champion in the comp, determine the comp
-What does the typical comp look like, the average, ideal?
-Given you get a champion, what should I put in for the highest winrate
-Given one component and one champion, what is the next component you should go for, based on the most common item for the champion
-Given x number of components, what champions and itemss should pick up to play strongest board
-Given other ppl's comp, what should you go, best matchups, correlated to the most successful comp I guess
 
 # Data Cleaning
 
