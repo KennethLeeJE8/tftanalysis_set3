@@ -1,6 +1,6 @@
 # tftanalysis_set3
 
-This is an analysis done on Set 3 of Teamfight Tactics, a game made by Riot Games. 
+This is an analysis done on Set 3 of Teamfight Tactics, a game made by Riot Games.
 ![Teamfight Tactics Set 3](https://github.com/KennethLeeJE8/tftanalysis_set3/blob/main/images/tftset3.jpg)
 
 League of Legends Teamfight Tactics(TFT) is a game I have been playing since 2019 and decided to start this analysis on set 3, which I played briefly during 2020. Riot, the maker of the game, releases a new set, which is a new version of the game with different champions, mechanics and traits.
@@ -20,7 +20,7 @@ The questions I aim to answer are:
 
 ## Data Structure (What the raw data looks like):
 
-Here is some information about the variables collected in the dataset. 
+Here is some information about the variables collected in the dataset.
 
 gameId: Unique identifier of game, all 8 players in the same game have the same identifier
 
@@ -28,7 +28,7 @@ gameDuration: How long the game lasted, which ends when someone gets 1st place
 
 level: level
 
-lastRound: The last round you participated in 
+lastRound: The last round you participated in
 
 ranked: The rank you obtained in the game, 1st is the best and 8th is the worst
 
@@ -102,13 +102,13 @@ Given other ppl's comp, what should you go, best matchups, correlated to the mos
 <img width="717" alt="image" src="https://user-images.githubusercontent.com/71307669/178202992-3398ac3d-14da-477b-94be-8f535451321f.png">
 
 
-Working throught the dataset, I noticed that many of the champion columns for players where scarce, less than 7 champions on the board, max being 9(not including Force of Nature(+1 unit on board)). Because we want quality data, we will only be taking end-game comps, these are the following assumptions on end game comps:
+Working throught the dataset, I noticed that many of the champion columns for players where scarce, less than 7 champions on the board, max being 9(not including Force of Nature(+1 unit on board)). As we are looking for endgame comps, these following assumptions are made for consistency in data:
 
 - Player needs to be at least level 7
 - Need at least 8 units on board (use FON to have 8 units but lv7)
 - At least 4 full items on board
 
-Because to the time constraints, we are only going to explore fully developed compositions, this is okay due to the abundance of data in this dataset, we will be liberal in choosing only fully developed team compositions to explore.
+Because to the time constraints, we will be dropping any rows that do not meet the criteria above, we can do this in this project due to the abundance of data we have access to. 
 
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/71307669/178202003-aac8e095-6fab-4c5a-92a9-b55d220e1079.png">
 
@@ -130,9 +130,9 @@ Meta Analysis (What is the most popular and most successful)
 - Most successful spat for comp character (all spat items have 8's, so must be tens and not 88 but 89)
 - Most common item pair, what 2 items go together the most (map items together)
 
-For all of these show the top and bottom 5, so we get a good idea of which comps and items to build and which to avoid. 
+For all of these show the top and bottom 5, so we get a good idea of which comps and items to build and which to avoid. Winrate represents the average position of the comp/champ/item, this ranges from 0-7 with 0 getting 8th place and 7 getting 1st place.
 
-Given the processing constraints of my laptop, I have decided to only use 10000 challanger games for this analysis. 
+Given the processing constraints of my laptop, I have decided to only use 10000 challanger games for this analysis.
 
 ### Most played, successful comp (Using Ranked to judge successfulness)
 
@@ -169,6 +169,3 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 ### Most Common Builds for champion
 
 <img width="368" alt="image" src="https://user-images.githubusercontent.com/71307669/178236480-38f16731-fc18-432c-ad73-353352b6385a.png">
-
-
-
