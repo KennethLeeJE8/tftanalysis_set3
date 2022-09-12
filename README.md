@@ -3,16 +3,17 @@
 This is an analysis done on Set 3 of Teamfight Tactics, a game made by Riot Games.
 ![Teamfight Tactics Set 3](https://github.com/KennethLeeJE8/tftanalysis_set3/blob/main/images/tftset3.jpg)
 
-League of Legends Teamfight Tactics(TFT) is a game I have been playing since 2019 and decided to start this analysis on set 3, which I played briefly during 2020. Riot, the maker of the game, releases a new set, which is a new version of the game with different champions, mechanics and traits.
+League of Legends Teamfight Tactics(TFT) is a game I have been playing since 2019 and decided to start this analysis on set 3, which I played briefly during 2020. Riot, the curators of the game, releases a new set, which is a new version of the game with different champions, mechanics and traits.
 
 Some terms to note:
 
 Meta: The most effective composition in this version of the game
-Slam: When you forced to make an item because you need to improve your team
+Slam: When you forced to make an item because you need to improve your team's power
+Team Comp: Short for team composition, commonly used in the game
 
 The questions I aim to answer are:
 
-- To know which team compositions were the most popular and had the highest winrate, in other words, the meta during set 3
+- To know which team comp were the most popular and had the highest winrate, in other words, the meta during set 3
 - To know which comp to build given the champions or items you currently have
 - Best champions to buy that are in the most successful comps (Highest winrate)
 - To know which items go on which champions and which champions go with an item, so you can achieve the most optimal item combination (know which items are an okay slam)
@@ -34,13 +35,14 @@ ranked: The rank you obtained in the game, 1st is the best and 8th is the worst
 
 inGameDuration: how long you were in game
 
-combination: A list of key values showing combination and count
+combination: A list of key values showing traits or origin and count
 
-key: Combination
+key: Trait or Origin Name
 
-value: the number of combinations
+value: the count of the trait or origin
 
 champion: json file, list of key values
+
 key : Champion name
 
 value : Item, Stars
@@ -108,7 +110,7 @@ Working throught the dataset, I noticed that many of the champion columns for pl
 - Need at least 8 units on board (use FON to have 8 units but lv7)
 - At least 4 full items on board
 
-Because to the time constraints, we will be dropping any rows that do not meet the criteria above, we can do this in this project due to the abundance of data we have access to. 
+Because to the time constraints, we will be dropping any rows that do not meet the criteria above, we can do this in this project due to the abundance of data we have access to.
 
 <img width="756" alt="image" src="https://user-images.githubusercontent.com/71307669/178202003-aac8e095-6fab-4c5a-92a9-b55d220e1079.png">
 
@@ -169,3 +171,9 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 ### Most Common Builds for champion
 
 <img width="368" alt="image" src="https://user-images.githubusercontent.com/71307669/178236480-38f16731-fc18-432c-ad73-353352b6385a.png">
+
+
+
+#Future Implications
+
+The hope for this project is to be able to import data from other sets, Riot comes up with new TFT sets approxiately every 3 months, this can be used to get an objective picture of the current state of the set.
