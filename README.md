@@ -141,6 +141,6 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 
 
 
-#Future Implications
+##Future Implications
 
-The hope for this project is to be able to import data from other sets, Riot comes up with new TFT sets approxiately every 3 months, this can be used to get an objective picture of the current state of the set.
+The hope for this project is to be able to import data from other sets, Riot comes up with new TFT sets approximately every 3 months, this can be used to get an objective picture of the current state of the set. 
