@@ -7,9 +7,9 @@ League of Legends Teamfight Tactics(TFT) is a game I have been playing since 201
 
 Some terms to note:
 
-Meta: The most effective composition in this version of the game
-Slam: When you forced to make an item because you need to improve your team's power
-Team Comp: Short for team composition, commonly used in the game
+- Meta: The most effective composition in this version of the game
+- Slam: When you forced to make an item because you need to improve your team's power
+- Team Comp: Short for team composition, commonly used in the game
 
 The questions I aim to answer are:
 
