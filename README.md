@@ -139,7 +139,13 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 
 <img width="368" alt="image" src="https://user-images.githubusercontent.com/71307669/178236480-38f16731-fc18-432c-ad73-353352b6385a.png">
 
+# Problems with this project
 
+- The runtime is really long as the number of rows processed increases, as it iterates throught the dataset many times, I could try to reduce this by reusing DataFrames used and changing them instead of creating new ones for each functions.
+
+- There are only 2 tools to use, could explore item component one, where the tool tells you the best item component to take given your position
+
+- Some of the code is very inefficient, could work on improving runtime by changing the structure.
 
 # Future Implications
 
