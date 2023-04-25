@@ -17,7 +17,8 @@ The questions I aim to answer are:
 - To know which comp to build given the champions or items you currently have
 - Best champions to buy that are in the most successful comps (Highest winrate)
 - To know which items go on which champions and which champions go with an item, so you can achieve the most optimal item combination (know which items are an okay slam)
-- The dataset I am using tracks games played in high level play, which is in the top 1% of players, consisting of Challenger, Grandmaster and Master rank. I will be using this data to determine what the optimal level of play was during set 3.
+
+The dataset I am using tracks games played in high level play, which is in the top 1% of players, consisting of Challenger, Grandmaster and Master rank. I will be using this data to determine what the optimal level of play was during set 3.
 
 ## Data Structure (What the raw data looks like):
 
