@@ -66,7 +66,7 @@ Stars : Enhance Champion n (Min 1 Star, Max 3 Star)
 - Best champions to hold that are in the most successful comps, good champions across the board
 - To know which items go on which champions and which champions go with an item, given already built or need to slam
 
-The application for this is to apply this data analysis to future sets to better understand the game and understand what is meta at the moment. 
+The application for this is to apply this data analysis to future sets to better understand the game and understand what is meta at the moment.
 
 # Data Cleaning
 
@@ -141,6 +141,25 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 
 <img width="368" alt="image" src="https://user-images.githubusercontent.com/71307669/178236480-38f16731-fc18-432c-ad73-353352b6385a.png">
 
+# Tools
+
+I have produced 2 tools that can be used during gameplay, these tools will help you make the best decision given your position in the game.
+
+1. Champion-Comp Pairing
+
+The first tool takes in a list of champions and outputs the possible comps that you could play from that position.
+
+The comp is determined by 2 main factors:
+- Similarity: A comp is easier to achieve if you have more champions that make up the comp, there are less champions you need to look for and thus less gold can be spent to look for the champions that make up this team comp
+- Winrate: A comp is more desirable if it has a higher winrate overall, so winrate is important to consider when recommending the best comp to run
+
+2. BIS Tools
+
+BIS stands for "Best in Slot", it describes the best items for a given champion in the game. This tool aims to find the BIS for each champion, taking what items and champions you currently have into consideration.
+
+This tool takes in a list of champions and items, and outputs how you should arrange the items onto your champions based on their performance in the dataset. 
+
+
 # Problems with this project
 
 - The runtime is really long as the number of rows processed increases, as it iterates throught the dataset many times, I could try to reduce this by reusing DataFrames used and changing them instead of creating new ones for each functions.
@@ -151,4 +170,4 @@ Given the processing constraints of my laptop, I have decided to only use 10000 
 
 # Future Implications
 
-The hope for this project is to be able to import data from other sets, Riot comes up with new TFT sets approximately every 3 months, this can be used to get an objective picture of the current state of the set. 
+The hope for this project is to be able to import data from other sets, Riot comes up with new TFT sets approximately every 3 months, this can be used to get an objective picture of the current state of the set.
