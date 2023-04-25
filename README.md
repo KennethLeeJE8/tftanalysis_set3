@@ -3,17 +3,17 @@
 This is an analysis done on Set 3 of Teamfight Tactics, a game made by Riot Games.
 ![Teamfight Tactics Set 3](https://github.com/KennethLeeJE8/tftanalysis_set3/blob/main/images/tftset3.jpg)
 
-League of Legends Teamfight Tactics(TFT) is a game I have been playing since 2019 and decided to start this analysis on set 3, which I played briefly during 2020. Riot, the curators of the game, releases a new set, which is a new version of the game with different champions, mechanics and traits.
+League of Legends Teamfight Tactics(TFT) is a game I have been playing since 2019 and decided to start this analysis on set 3, which I played briefly during 2020. Riot Games releases a new set, which is a new version of the game with different champions, mechanics and traits, every few months.
 
 Some terms to note:
 
 - Meta: The most effective composition in this version of the game
-- Slam: When you forced to make an item because you need to improve your team's power
-- Team Comp: Short for team composition, commonly used in the game
+- Slam: When you forced to make an item because you need to improve your team's power in hopes of winning a fight
+- Comp: Short for team composition, commonly used in the game
 
 The questions I aim to answer are:
 
-- To know which team comp were the most popular and had the highest winrate, in other words, the meta during set 3
+- To know which comps were the most popular and had the highest winrate, in other words, the meta during set 3
 - To know which comp to build given the champions or items you currently have
 - Best champions to buy that are in the most successful comps (Highest winrate)
 - To know which items go on which champions and which champions go with an item, so you can achieve the most optimal item combination (know which items are an okay slam)
@@ -62,7 +62,7 @@ Stars : Enhance Champion n (Min 1 Star, Max 3 Star)
 
 - To know what the meta was at the time and what team compositions would yield the best results overall
 - To know what to do in certain situations, given the champions you have or components you have what to build
-- Best champions to hold that are in the most successful comps (Highest winrate)
+- Best champions to hold that are in the most successful comps, good champions across the board
 - To know which items go on which champions and which champions go with an item, given already built or need to slam
 
 The application for this is to apply this data analysis to future sets to better understand the game and understand what is meta at the moment. 
@@ -90,13 +90,13 @@ This is the data after being cleaned, where the conditions mentioned above are m
 
 # Data Analysis
 
-There are many websites that aim to find out what the best comps to build are and what items you should have for these comps, my data analysis attempt to uncover some insight that will help people make more infored decisions when playing the game
+There are many websites that aim to find out what the best comps to build are and what items you should have for these comps, my data analysis aims to uncover some insight that will help people make more informed decisions when playing the game
 
 Meta Analysis (What is the most popular and most successful)
 - Most played, successful comp (Using Ranked to judge successfulness)
 - Most played, successful champ (Using Ranked to judge successfulness)
 - Most used, successful item (Using Ranked to judge successfulness, might not be too correlated)
-- Highest item-character correlation (Make a list of tuples, where each row is a character-item pair)
+- Highest item-character correlation (Best performing set of items on a given champion)
 - Most successful spat for comp character (all spat items have 8's, so must be tens and not 88 but 89)
 - Most common item pair, what 2 items go together the most (map items together)
 
