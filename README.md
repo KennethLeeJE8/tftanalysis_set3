@@ -153,6 +153,9 @@ The comp is determined by 2 main factors:
 - Similarity: A comp is easier to achieve if you have more champions that make up the comp, there are less champions you need to look for and thus less gold can be spent to look for the champions that make up this team comp
 - Winrate: A comp is more desirable if it has a higher winrate overall, so winrate is important to consider when recommending the best comp to run
 
+Example:
+
+
 2. BIS Tools
 
 BIS stands for "Best in Slot", it describes the best items for a given champion in the game. This tool aims to find the BIS for each champion, taking what items and champions you currently have into consideration.
@@ -162,12 +165,16 @@ This tool takes in a list of champions and items, and outputs how you should arr
 
 # Problems with this project
 
-- The runtime is really long as the number of rows processed increases, as it iterates throught the dataset many times, I could try to reduce this by reusing DataFrames used and changing them instead of creating new ones for each functions.
+- The runtime is really long as the number of rows processed increases, as it iterates through the dataset many times, I could try to reduce this by reusing DataFrames used and changing them instead of creating new ones for each functions.
 
-- There are only 2 tools to use, could explore item component one, where the tool tells you the best item component to take given your position
+- There are currently only 2 tools, one to determine optimal team comp and another to determine optimal item-champion pairing.
 
 - Some of the code is very inefficient, could work on improving runtime by changing the structure.
 
 # Future Implications
+
+1. Building more tools in the future
+
+One tool to explore is taking in item components and champions as an input and figuring out which items to build and who they go on, it is one step above the BIS tool I built
 
 The hope for this project is to be able to import data from other sets, Riot comes up with new TFT sets approximately every 3 months, this can be used to get an objective picture of the current state of the set.
