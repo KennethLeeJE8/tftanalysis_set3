@@ -65,6 +65,7 @@ Stars : Enhance Champion n (Min 1 Star, Max 3 Star)
 - Best champions to hold that are in the most successful comps (Highest winrate)
 - To know which items go on which champions and which champions go with an item, given already built or need to slam
 
+The application for this is to apply this data analysis to future sets to better understand the game and understand what is meta at the moment. 
 
 # Data Cleaning
 
